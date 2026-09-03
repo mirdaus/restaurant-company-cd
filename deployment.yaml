@@ -39,7 +39,7 @@ spec:
       containers:
         - name: restaurant-company
 
-          image: 288673275952.dkr.ecr.us-east-2.amazonaws.com/restaurant-company:latest
+          image: 484908302072.dkr.ecr.us-east-2.amazonaws.com/restaurant-company:a3db607472cd77af61d82c6a83c0b90ec5e97afe
 
           imagePullPolicy: Always
 
