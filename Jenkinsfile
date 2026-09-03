@@ -2,14 +2,12 @@ pipeline {
     agent any
 
     environment {
+        PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${env.PATH}"
+
         AWS_REGION = 'us-east-2'
-
-        // CHANGE THIS to your actual EKS cluster name
-        EKS_CLUSTER = 'new-eks'
-
+        EKS_CLUSTER = 'YOUR-EKS-CLUSTER-NAME'
         NAMESPACE = 'restaurant-prod'
-    }
-
+}
     stages {
 
         stage('Checkout') {
