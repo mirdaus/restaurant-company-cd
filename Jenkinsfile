@@ -5,7 +5,7 @@ pipeline {
         PATH = "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${env.PATH}"
 
         AWS_REGION = 'us-east-2'
-        EKS_CLUSTER = 'new-eks'
+        EKS_CLUSTER = 'eks-test'
         NAMESPACE = 'restaurant-prod'
 }
     stages {
